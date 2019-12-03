@@ -1,0 +1,132 @@
+extends layout/layout.pug
+
+block content
+  section#banner
+    video#myVideo(autoplay='' muted='' loop='')
+      source(src='../assets/1.mp4' type='video/mp4')
+      | Your browser does not support HTML5 video.
+    #banner-content
+      .container(style='display: flex; vertical-align: center; height: 100%;')
+        div(style='display: flex; width: 100%;')
+          .text-center(style='color: #ccc; align-self: center; width: 100%;')
+            h2.h4.my-4
+              | the best way to teach children problem-solving
+              br
+              |                             and logical thinking
+            h1.display-4.my-4
+              | Storybooks for kids to learn
+              br
+              | coding through AR
+            button.pa-btn-lightblue PLAY NOW
+  section.container.py-5
+    h2.text-center One day, albert help his mom to take out the garbage...
+    .row
+      .col-4.offset-2
+        img(src='../assets/p1.png' alt='' style='width: 100%')
+      .col-4
+        p.py-5
+          | On a well-known planet in the universe, Dali, there lives
+          | a naughty robot named Albert.
+          br
+          |                     He was supposed to help his mom take out the garbage
+          |                     today. But it was long past the pickup time, and Mom still
+          |                     had no sight of him...
+    .row
+      .col-4.offset-2
+        p.py-5
+          | In fact, Albert wasn&rsquo;t anywhere playing. On his way
+          | home, he found a flying saucer. It suddenly glowed when
+          br
+          |                     he passed by, and it floated slowly from the ground and
+          |                     opened it glass dome, as if it has been waiting here for
+          |                     Albert.
+      .col-4
+        img(src='../assets/p2.png' alt='' style='width: 100%')
+  
+  .pa-fancy-section.pa-fancy-bg(style="background-image: url('../assets/banner_1.jpg');")
+    p
+      | he passed by, and it floated slowly from
+      br
+      | the ground and opened it glass dome, as if it
+      br
+      | has been waiting here for Albert.
+  
+  
+  
+  section.container.py-5
+    .py-5
+      h2.text-center One day, albert help his mom to take out the garbage...
+      .row
+        .col-4.offset-2
+          img(src='../assets/p1.png' alt='' style='width: 100%')
+        .col-4
+          p.py-5
+            | On a well-known planet in the universe, Dali, there lives
+            | a naughty robot named Albert.
+            br
+            | He was supposed to help his mom take out the garbage
+            | today. But it was long past the pickup time, and Mom still
+            |  had no sight of him...
+  
+  .pa-fancy-section.pa-fancy-bg(style="background-image: url('../assets/banner_2.jpg');")
+    p
+      | he passed by, and it floated slowly from
+      br
+      | the ground and opened it glass dome, as if it
+      br
+      | has been waiting here for Albert.
+
+  section.container.py-5
+    .text-center
+      h2 Challenge
+      p
+        | blablablavblablabla
+        | blablablavblablabla
+        | blablablavblablabla
+        | blablablavblablabla
+    include ./includes/simulator.pug
+  
+  section#demo-video.py-4(style="min-height: 400px")
+    .container(style="max-width: 700px")
+      //- iframe(style="width: 100%; height: 100;" width="560" height="400" src="https://www.youtube.com/embed/HYSLfHrIMt0?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=true)
+  
+
+  section.py-5
+    .container.text-center.py-5(style="max-width: 900px")
+      h2 Why AR Storybooks
+      p.py-3
+        | Children lack motivation in learning programming because they don’t understand why they need to code, so we created Playful Albert, an augmented reality storybook that teaches kids programming. Packed up with a fantastic storyline, beautiful illustrations, and AR animations, this self-learning, and coding for kids' storybook will stir up the eagerness to learn how to code. Once your child learns the essential concepts with the view of an existing environment, they will realize that they are only limited by their imagination. Children can read the storybook and learn to code themselves. Hence, they can now find their solution and in essence develop two distinct psychological skills (analytical and creativity skills).
+
+      .text-center
+        button.pa-btn-white.pa-bg-opacity
+          | learn more&nbsp;
+          i.fas.fa-arrow-right
+
+  .pa-fancy-section.pa-fancy-bg(style="background-image: url('../assets/banner_3.jpg');")
+    .text-center
+      p
+        | he passed by, and it floated slowly from
+        br
+        | the ground and opened it glass dome, as if it
+        br
+        | has been waiting here for Albert.
+
+        a.d-block.pt-3.pa-link(href="#") Learn more
+
+  section.py-5
+    .container.text-center.py-5(style="max-width: 900px")
+      h2 Our Objectives
+      p.py-3
+        strong.h4 To increase kids’ motivation to learn to code through stories
+        br
+        | Kids might not be interested in practical problems, but they surely love games and stories! The Playful Albert series features amusing characters, meaningful stories, and exquisite illustrations. We believe the stories will intrigue the kids and inspire them to help the characters overcome obstacles along the way with their coding skills.
+      p.py-3
+        strong.h4 To teach kids coding in a fun and easy way
+        br
+        | We designed an easy-to-learn, easy-to-use coding system, where kids can start coding without getting intimidated by tedious instructions. Almost every kid over five years will be able to create a program within a few minutes and make our main character Albert move around on a map! Furthermore, with our AR app, Albert will hop onto the map and follow the instructions to carry out tasks virtually, making the coding experience even more fun!
+        | Finally, we believe that learning programming is the best way to teach children problem-solving and logical thinking skills. There is no better time to introduce the code to kids than now!!!
+
+      .text-center
+        button.pa-btn-white.pa-bg-opacity
+          | learn more&nbsp;
+          i.fas.fa-arrow-right

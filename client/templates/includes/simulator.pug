@@ -1,0 +1,21 @@
+- let commands = ['R', 'R', 'L', 'L']
+- let dashboxs = Array(40 - commands.length).fill(undefined)
+
+
+.vue-editor
+  div(style="margin: auto; max-width: 600px; background-color: #777;")
+    .playground.text-center.pa-bg-cover(style="background-image: url(../assets/p3.png)")
+      .player(v-bind:style="{top: top, left: left}")
+        img(src="../assets/albert.png" style="width: 100%; height: 100%;")
+  .editor.p-3.pa-bg-cover(style="background-image: url('../assets/bg2.jpg');")
+    .commands
+      .cmd(v-for="cmd, index in commands" v-bind:class="{active: current==index}")
+        img(src="../assets/commands/step_forward.png" v-if="cmd == 'M'")
+        img(src="../assets/commands/step_back.png" v-if="cmd == 'B'")
+        img(src="../assets/commands/turn_right.png" v-if="cmd == 'R'")
+        img(src="../assets/commands/turn_left.png" v-if="cmd == 'L'")
+      .cmd.dash(v-for="cmd in dashboxs")
+    .text-center
+      
+      button.pa-btn-red(@click="run", v-if="!isRunning") START
+      button.pa-btn-lightblue(@click="stop", v-if="isRunning") STOP

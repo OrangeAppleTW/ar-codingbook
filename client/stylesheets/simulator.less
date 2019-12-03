@@ -1,0 +1,57 @@
+.playground {
+  width: 100%;
+  height: 0;
+  padding-bottom: 83.33%;
+  position: relative;
+
+  .player {
+    top: 0;
+    left: 0;
+    width: calc(100%/6);
+    height: calc(100%/5);
+    // background-color: red;
+    position: absolute;
+    transition: all .5s linear;
+  }
+}
+
+
+
+.editor {
+  max-width: 800px;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+
+  .commands {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .cmd {
+      // background-image: url('../assets/commands/step_back.png');
+      // background-position: center;
+      // background-size: cover;
+      width: 60px;
+      height: 60px;
+      margin: 8px;
+      border: 2px solid white;
+      background-color: lightblue;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &.dash {
+        border-style: dashed;
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      &.active {
+        background-color: gold;
+      }
+    }
+  }
+}

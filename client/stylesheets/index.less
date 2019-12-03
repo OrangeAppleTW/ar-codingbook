@@ -1,0 +1,111 @@
+@import 'colors.less';
+@import 'button.less';
+@import 'navbar.less';
+@import 'banner.less';
+@import 'simulator.less';
+
+.pa-link {
+  color: #fff !important;
+}
+
+.pa-input {
+  padding: 10px 5px;
+  border: 1px solid #dddddd;
+}
+
+// 滾動背景
+.pa-fancy-bg {
+  background-size: cover;
+}
+
+.pa-bg-cover {
+  background-position: center;
+  background-size: cover;
+}
+
+.pa-bg-attachment {
+  background-attachment: fixed;
+}
+
+.pa-fancy-section {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+}
+
+body {
+  color: #555;
+  background-color: #f7f7f7;
+  font-family: 'Open Sans', serif;
+  position: relative;
+}
+
+
+#banner {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+  color: #fff;
+  z-index: -1;
+}
+
+#banner-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+}
+
+#myVideo {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto;
+  z-index: -1000; 
+  overflow: hidden;
+}
+
+
+
+
+#picktures {
+  height: 80vh;
+  background-color:#333;
+  background-image: url('./images/bg1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+#demo-video {
+  // height: 80vh;
+  background-color: #111;
+}
+
+
+
+
+
+
+
+.form {
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+}
